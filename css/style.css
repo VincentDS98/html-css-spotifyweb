@@ -160,6 +160,13 @@ MEDIA QUERY
 
 
 @media screen and (min-width:600px) {
+    aside h3,
+    aside ul,
+    aside h5,
+    aside hr,
+    aside h4 {
+        display:block;
+    }
     .card-container {
         width: calc(100% - 200px);
         display: flex;
