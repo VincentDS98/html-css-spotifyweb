@@ -135,8 +135,24 @@ MEDIA QUERY
     aside ul,
     aside h5,
     aside hr,
-    aside h4,{
+    aside h4{
+        display: none;
+    }
+    .color-grey ul  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;   
+    }
+    .card-container {
+        width: calc(100% - 200px);
+        display: flex;
+        flex-wrap: wrap;
         
+    }
+    .card {
+        width: calc(100% / 2);
+        margin: 20px 5px;
+    
     }
 
 }
