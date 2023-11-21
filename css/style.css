@@ -131,14 +131,52 @@ MEDIA QUERY
 
 
 @media screen and (min-width:110px) {
+    aside h3,
+    aside ul,
+    aside h5,
+    aside hr,
+    aside h4,{
+        
+    }
 
 }
+
+
 
 @media screen and (min-width:600px) {
+    .card-container {
+        width: calc(100% - 200px);
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .color-grey ul  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;   
+    }
+    .card {
+        width: calc(100% / 2);
+        margin: 20px 5px;
     
+    }
 }
 @media screen and (min-width:700px) {
+    .color-grey ul  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;   
+    }
+    .card-container {
+        width: calc(100% - 200px);
+        display: flex;
+        
+    }
+    .card {
+        width: calc(100% / 6);
+        margin: 20px 5px;
     
+    }
 }
     
 @media screen and (min-width:1100px) {
