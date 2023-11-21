@@ -6,48 +6,103 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+ul {
+    list-style-type: none;
+}
 
 /*
 GENERAL
 */
 .container {
-    width: 1100px;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+aside {
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+main {
+    width: calc(100% - 200px);
+    height: 100%;
+    color: white;
+    
 }
 img {
     width: 100%;
 }
-ul {
+ aside ul {
     margin-top: 5px;
 }
 
-ul > * {
+ aside ul > * {
     margin: 15px 0;
 }
-h3 {
+aside h3 {
     margin: 10px 0;
 }
-h5 {
-    margin-top: 300px;
+aside h5 {
+    margin-top: 750px;
+}
+
+/*
+HEADER/MAIN
+*/
+main  h3 {
+    
+    padding: 30px 0;
+
 }
 
 /*
 MAIN
 */
-.color {
-    background-color: black;
-    color: white;
-    width: 20%;
+.color-blue {
+    height: 80px;
+    width: calc(100% - 200px);
+    position: fixed;
+    background-color: #080B12;
+    text-align: right;
 }
+
+.color-grey {
+    background-color:#141922;
+    height: 100%;
+    overflow: auto;
+    padding-top: 80px;
+}
+
+.color-grey ul  {
+    display: flex;
+    justify-content:center;
+    
+    
+}
+
+.color-grey ul li {
+    margin: 5px 10px;
+}
+.card-container {
+    width: calc(100% - 200px);
+    display: flex;
+    
+}
+.card {
+    width: calc(100% / 6);
+    margin: 20px 5px;
+
+}
+
+
 
 /*
 FOOTER
 */
+footer {
+    height: 100px;
+}
 
 
-
-/*
-HEADER/MAIN
-*/
 
 
 
